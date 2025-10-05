@@ -4,6 +4,8 @@ import { usePathname } from "next/navigation";
 import { RootState } from "@/store/store";
 import { useSelector } from "react-redux";
 
+const x = ["@/components/layouts/Layout"];
+
 const Header: React.FC = () => {
   const pathname = usePathname();
   const count = useSelector((state: RootState) => state.counter.value);
